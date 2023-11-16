@@ -58,7 +58,9 @@ python preprocess_data.py \
 
 ## Notes
 
-Your JSONL file must NOT contain any empty lines.
+1. Input file name must ends with `.jsonl`
+
+2. Your JSONL file must NOT contain any empty lines.
 
 Example(This makes error):
 
