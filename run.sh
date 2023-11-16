@@ -1,8 +1,10 @@
-mkdir -p data/
+# Create output directory
+mkdir -p data-sample/
+# Encode the dataset
 python preprocess_data.py \
---input ../falcon_korean_stack_hq_w_trans.jsonl \
+--input examples/sample_dataset.jsonl \
 --tokenizer-type AutoTokenizer \
 --vocab-file beomi/llama-2-ko-7b \
---output-prefix data/out \
+--output-prefix data-sample/out \
 --dataset-impl mmap \
---workers 100 \
+--workers 10
