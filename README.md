@@ -61,7 +61,8 @@ Example(This makes error):
 ```json
 {"text": "This is the first sentence."}
 {"text": "This is the second sentence."}
-
+// YOU SHOULD NOT HAVE EMPTY LINE HERE
+{"text": "This is the third sentence."}
 ```
 
 JSON above will cause this error:
