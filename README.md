@@ -63,6 +63,7 @@ Example(This makes error):
 {"text": "This is the second sentence."}
 // YOU SHOULD NOT HAVE EMPTY LINE HERE
 {"text": "This is the third sentence."}
+// YOU SHOULD NOT HAVE EMPTY LINE AT THE END OF THE FILE TOO
 ```
 
 JSON above will cause this error:
