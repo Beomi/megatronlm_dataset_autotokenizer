@@ -37,19 +37,44 @@ for more details, please checkout [requirements.frozen.txt](requirements.frozen.
 ## Encode the dataset
 
 - Encode the dataset with the following command
-- Check [run.sh](run.sh) for more details
+- Check sample shell file:[run.sh](run.sh)
 
 ```bash
 # Create output directory
-mkdir -p data/
+mkdir -p data-sample/
 # Encode the dataset
 python preprocess_data.py \
 --input examples/sample_dataset.jsonl \
 --tokenizer-type AutoTokenizer \
 --vocab-file beomi/llama-2-ko-7b \
---output-prefix data/ \
+--output-prefix data-sample/out \
 --dataset-impl mmap \
---workers 100 \
+--workers 10
+```
+
+## Notes
+
+Your JSONL file must NOT contain any empty lines.
+
+Example(This makes error):
+
+```json
+{"text": "This is the first sentence."}
+{"text": "This is the second sentence."}
+
+```
+
+JSON above will cause this error:
+
+```
+jsonlines.jsonlines.InvalidLineError: line contains invalid json: Expected object or value (line 3)
+```
+
+This is OK:
+
+```json
+{"text": "This is the first sentence."}
+{"text": "This is the second sentence."}
 ```
 
 ## Acknowledgement
