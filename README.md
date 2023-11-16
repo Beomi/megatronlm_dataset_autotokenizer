@@ -1,4 +1,17 @@
-# MegatronLM Dataset Prepare
+# MegatronLM Dataset with AutoTokenizer
+
+## What's the difference between `GPT-NeoX` or `Megaton-LM`?
+
+- `GPT-NeoX` is a fork of `Megatron-LM` with some additional features.
+- `GPT-NeoX` supports various tokenizers than `Megatron-LM`, such as `LlamaTokenizer`, `HFGPT2Tokenizer`, or `TiktokenTokenizer`.
+
+However, both repository does not support Transformers `AutoTokenizer` out of the box.
+
+That's why I made this repository.
+
+In this repository:
+
+- You can encode your dataset with any `AutoTokenizer`-compatible tokenizer.
 
 ## Prepare the dataset
 
