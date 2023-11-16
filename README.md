@@ -1,3 +1,7 @@
+<p align="center" width="100%">
+<img src="logo.png" alt="KoAlpaca icon" style="width: 300px; display: block; margin: auto;">
+</p>
+
 # MegatronLM Dataset with AutoTokenizer
 
 ## What's the difference between `GPT-NeoX` or `Megaton-LM`?
