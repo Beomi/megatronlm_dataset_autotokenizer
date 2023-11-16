@@ -1,0 +1,9 @@
+-f https://download.pytorch.org/whl/cpu
+transformers
+tokenizers
+sentencepiece
+numpy
+lm_dataformat
+tqdm
+ftfy
+torch 
